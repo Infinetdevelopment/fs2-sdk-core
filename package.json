@@ -11,7 +11,7 @@
   "repository": "https://github.com/infinetdevelopment/fs2-sdk-core.git",
   "keywords": [
     "freedomswap",
-    "pulschain"
+    "pulsechain"
   ],
   "module": "dist/sdk-core.esm.js",
   "scripts": {
