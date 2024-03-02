@@ -20,7 +20,9 @@ export enum ChainId {
   BASE = 8453,
   ZORA = 7777777,
   ZORA_SEPOLIA = 999999999,
-  ROOTSTOCK = 30
+  ROOTSTOCK = 30,
+  PULSECHAIN = 369,
+  PULSECHAIN_TESTNET = 918
 }
 
 export const SUPPORTED_CHAINS = [
@@ -43,7 +45,9 @@ export const SUPPORTED_CHAINS = [
   ChainId.BASE_GOERLI,
   ChainId.ZORA,
   ChainId.ZORA_SEPOLIA,
-  ChainId.ROOTSTOCK
+  ChainId.ROOTSTOCK,
+  ChainId.PULSECHAIN,
+  ChainId.PULSECHAIN_TESTNET
 ] as const
 export type SupportedChainsType = typeof SUPPORTED_CHAINS[number]
 
@@ -56,5 +60,6 @@ export enum NativeCurrencyName {
   MOONBEAM = 'GLMR',
   BNB = 'BNB',
   AVAX = 'AVAX',
-  ROOTSTOCK = 'RBTC'
+  ROOTSTOCK = 'RBTC',
+  PULSECHAIN = 'PLS'
 }

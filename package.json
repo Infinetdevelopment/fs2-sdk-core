@@ -2,16 +2,16 @@
   "name": "@uniswap/sdk-core",
   "license": "MIT",
   "version": "4.1.3",
-  "description": "⚒️ An SDK for building applications on top of Uniswap V3",
+  "description": "⚒️ An SDK for building applications on top of FreedomSwap V3",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/Uniswap/uniswap-sdk-core.git",
+  "repository": "https://github.com/infinetdevelopment/fs2-sdk-core.git",
   "keywords": [
-    "uniswap",
-    "ethereum"
+    "freedomswap",
+    "pulschain"
   ],
   "module": "dist/sdk-core.esm.js",
   "scripts": {
