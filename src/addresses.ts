@@ -60,7 +60,9 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.BASE]: '0x4752ba5dbc23f44d87826276bf6fd6b1c372ad24',
   [ChainId.AVALANCHE]: '0x4752ba5dbc23f44d87826276bf6fd6b1c372ad24',
   [ChainId.BNB]: '0x4752ba5dbc23f44d87826276bf6fd6b1c372ad24',
-  [ChainId.POLYGON]: '0xedf6066a2b290c185783862c7f4776a2c8077ad1'
+  [ChainId.POLYGON]: '0xedf6066a2b290c185783862c7f4776a2c8077ad1',
+  [ChainId.PULSECHAIN]: '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D', // UNI copied over from fork
+  [ChainId.PULSECHAIN_TESTNET]: '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D' // UNI copied over from fork
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -223,6 +225,11 @@ const ROOTSTOCK_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x0B14ff67f0014046b4b99057Aec4509640b3947A'
 }
 
+const PULSECHAIN_ADDRESSES: ChainAddresses = {
+  ...DEFAULT_ADDRESSES,
+  v1MixedRouteQuoterAddress: '0x84E44095eeBfEC7793Cd7d5b57B7e401D7f1cA2E'
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -243,7 +250,9 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
   [ChainId.ZORA]: ZORA_ADDRESSES,
   [ChainId.ZORA_SEPOLIA]: ZORA_SEPOLIA_ADDRESSES,
-  [ChainId.ROOTSTOCK]: ROOTSTOCK_ADDRESSES
+  [ChainId.ROOTSTOCK]: ROOTSTOCK_ADDRESSES,
+  [ChainId.PULSECHAIN]: PULSECHAIN_ADDRESSES, // copied over from fork
+  [ChainId.PULSECHAIN_TESTNET]: PULSECHAIN_ADDRESSES // copied over from fork
 }
 
 /* V3 Contract Addresses */
